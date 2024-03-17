@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.testing'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation "io.cucumber:cucumber-junit:7.11.1"
+    testImplementation "io.cucumber:cucumber-java:7.11.1"
+    testImplementation "io.cucumber:cucumber-core:7.11.1"
+    testImplementation "com.intuit.karate:karate-junit5:1.4.1"
+
+}
+
+test {
+    useJUnitPlatform()
+}
